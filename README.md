@@ -34,6 +34,15 @@ if you wish to search test content and run some assertions on the results then y
 3. As a result of 2. you need to make sure that the search options and other rest artifacts are deployed to this app server. 
 In order to do this execute the mlGradle task `mlDeploy` with `-PenvironmentName=test`. There is a special gradle
 properties file with settings to achieve this.
+4. It suits my project beset to run the tests under the STAGING (that is the context db) and make any test assertions in 
+FINAL using `xdmp:invoke-function`
+
+## Nice to Have
+
+It would be nice if all the DBs (JOBS, TRACING, TRIGGERS, FINAL, STAGING) and the respective test application servers for 
+STAGING and FINAL could be created and deployed automatically.
+
+  
 
 
   
