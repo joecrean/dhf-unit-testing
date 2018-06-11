@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search:options xmlns:search="http://marklogic.com/appservices/search">
+
+  <search:values name="uris">
+    <search:uri/>
+  </search:values>
+  <!--Change to 'filtered' to exclude false-positives in certain searches-->
+  <search:search-option>unfiltered</search:search-option>
+  <!--To return facets, change this option to 'true' and edit constraints-->
+  <search:return-facets>true</search:return-facets>
+  <!--To return snippets, comment out or remove this option-->
+  <search:transform-results apply="empty-snippet"/>
+</search:options>

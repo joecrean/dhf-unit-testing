@@ -1,0 +1,74 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url { 'https://dl.bintray.com/rjrudin/maven/' }
+        }
+        dependencies {
+            classpath 'com.marklogic:ml-gradle:3.6.0'
+            classpath 'gradle.plugin.com.marklogic:ml-data-hub:2.0.4'
+            classpath 'com.marklogic:ml-unit-test-client:0.9.1'
+        }
+    }
+}
+
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+
+    // This plugin allows you to create different environments
+    // for your gradle deploy. Each environment is represented
+    // by a gradle-${env}.properties file
+    // See https://github.com/stevesaliman/gradle-properties-plugin
+    // specify the env on the command line with:
+    // gradle -PenvironmentName=x ...
+    id 'net.saliman.properties' version '1.4.6'
+
+    // This gradle plugin extends the ml-gradle plugin with
+    // commands that make the Data Hub Framework do its magic
+    id 'com.marklogic.ml-data-hub' version '2.0.4'
+
+    id 'com.marklogic.ml-gradle' version '3.6.0'
+
+}
+
+repositories {
+    jcenter()
+    maven {
+        url  { 'https://dl.bintray.com/rjrudin/maven/'}
+    }
+}
+
+dependencies {
+    // this allows you to write custom java code that depends
+    // on the Data Hub Framework library
+    compile 'com.marklogic:marklogic-data-hub:2.0.4'
+    compile 'com.marklogic:marklogic-xcc:9.0.3'
+    mlRestApi 'com.marklogic:ml-unit-test:0.9.1'
+}
+
+task generateTDETemplateFromEntites(type: com.marklogic.gradle.task.es.GenerateModelArtifactsTask) {
+    def tmpEsDir = 'build/tmp/data/entity-services'
+    delete tmpEsDir
+
+    // need to copy into dedicated build dir as GenerateModelArtifactsTask
+    // expects to be able to create an entity for each dir and file in the
+    // plugins/entities/* directories
+    copy {
+        from 'plugins/entities'
+        into tmpEsDir
+        includeEmptyDirs false
+        include '*/Asset.entity.json'
+        eachFile { details ->
+            details.path = details.name // flatten copy
+        }
+    }
+    def appConfig = commandContext.appConfig
+    appConfig.modelsPath = tmpEsDir
+    appConfig.generateExtractionTemplate = true
+    appConfig.generateDatabaseProperties = false
+    appConfig.generateInstanceConverter = false
+    appConfig.generateSchema = false
+    appConfig.generateSearchOptions = false
+}

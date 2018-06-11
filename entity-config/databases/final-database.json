@@ -1,0 +1,271 @@
+{
+  "path-namespace": [
+    {
+      "prefix": "es",
+      "namespace-uri": "http://marklogic.com/entity-services"
+    }
+  ],
+  "range-path-index": [
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Comment/is-root",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Comment/thread-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Comment/comment-asset-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Comment/comment-user-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Comment/comment-creation-date",
+      "range-value-positions": false,
+      "scalar-type": "dateTime"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Comment/comment-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Group/group-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/AssetAuthorGroup/asset-author-fullname",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/User/user-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/User/upi",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/User/user-lastname",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/User/user-scientific-interests",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/SocialAcceptance/ratings",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/SocialAcceptance/likes",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/SocialAcceptance/sa-asset-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/KeywordGroup/keyword",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Rating/rating-value",
+      "range-value-positions": false,
+      "scalar-type": "unsignedInt"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Rating/rating-date",
+      "range-value-positions": false,
+      "scalar-type": "dateTime"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Rating/rating-user-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/asset-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/asset-source",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/asset-type",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/journal-title",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/article-title",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/publication-date",
+      "range-value-positions": false,
+      "scalar-type": "gYearMonth"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/publication-year",
+      "range-value-positions": false,
+      "scalar-type": "gYear"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/keyword/Keyword/keyword-name",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/keyword/Keyword/keyword-qualifier",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/asset-author-fullname",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/pdf-in-system",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/fulltext-subscribed",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/asset-language",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/article-type",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/en",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/doi",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/pmc-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Asset/pm-id",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    },
+    {
+      "collation": "http://marklogic.com/collation/codepoint",
+      "invalid-values": "reject",
+      "path-expression": "//es:instance/Author/author-fullname",
+      "range-value-positions": false,
+      "scalar-type": "string"
+    }
+  ],
+  "triple-index": true,
+  "collection-lexicon": true
+}

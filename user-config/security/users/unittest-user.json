@@ -1,0 +1,6 @@
+{
+  "user-name": "%%mlUnitTestUserName%%",
+  "description": "User definition for UnitTest",
+  "password": "%%mlUnitTestUserPassword%%",
+  "role": ["%%mlUnitTestUserRole%%"]
+}

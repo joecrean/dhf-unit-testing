@@ -1,0 +1,133 @@
+{
+  "Article" : {
+    "x" : 174,
+    "y" : 55,
+    "width" : 350,
+    "height" : 100,
+    "vertices" : { }
+  },
+  "Asset" : {
+    "x" : 650,
+    "y" : 16,
+    "width" : 708,
+    "height" : 542,
+    "vertices" : { }
+  },
+  "Author" : {
+    "x" : 1401,
+    "y" : 0,
+    "width" : 373,
+    "height" : 254,
+    "vertices" : { }
+  },
+  "Affiliate" : {
+    "x" : 1534,
+    "y" : 284,
+    "width" : 372,
+    "height" : 174,
+    "vertices" : { }
+  },
+  "Comment" : {
+    "x" : 679,
+    "y" : 549,
+    "width" : 559,
+    "height" : 258,
+    "vertices" : { }
+  },
+  "User" : {
+    "x" : 160,
+    "y" : 535,
+    "width" : 449,
+    "height" : 369,
+    "vertices" : { }
+  },
+  "Social-acceptance" : {
+    "x" : 600,
+    "y" : 684,
+    "width" : 491,
+    "height" : 176,
+    "vertices" : { }
+  },
+  "Rating" : {
+    "x" : 72,
+    "y" : 148,
+    "width" : 359,
+    "height" : 159,
+    "vertices" : { }
+  },
+  "SocialAcceptance" : {
+    "x" : 540,
+    "y" : 713,
+    "width" : 491,
+    "height" : 176,
+    "vertices" : {
+      "SocialAcceptance-Rating" : [ {
+        "x" : 369.0,
+        "y" : 213.0
+      } ]
+    }
+  },
+  "Group" : {
+    "x" : 45,
+    "y" : 932,
+    "width" : 375,
+    "height" : 300,
+    "vertices" : { }
+  },
+  "Invitation" : {
+    "x" : 487,
+    "y" : 962,
+    "width" : 350,
+    "height" : 181,
+    "vertices" : { }
+  },
+  "Collection" : {
+    "x" : 940,
+    "y" : 924,
+    "width" : 350,
+    "height" : 285,
+    "vertices" : { }
+  },
+  "AssetEvent" : {
+    "x" : 1405,
+    "y" : 1003,
+    "width" : 370,
+    "height" : 209,
+    "vertices" : { }
+  },
+  "History" : {
+    "x" : 1429,
+    "y" : 860,
+    "width" : 350,
+    "height" : 100,
+    "vertices" : { }
+  },
+  "Address" : {
+    "x" : 1386,
+    "y" : 466,
+    "width" : 350,
+    "height" : 100,
+    "vertices" : { }
+  },
+  "AssetAuthorGroup" : {
+    "x" : 49,
+    "y" : 333,
+    "width" : 410,
+    "height" : 157,
+    "vertices" : { }
+  },
+  "KeywordGroup" : {
+    "x" : 117,
+    "y" : 3,
+    "width" : 365,
+    "height" : 128,
+    "vertices" : { }
+  },
+  "ProfilePictures" : {
+    "x" : 1605,
+    "y" : 690,
+    "width" : 350,
+    "height" : 100,
+    "vertices" : { }
+  }
+}

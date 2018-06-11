@@ -1,0 +1,14 @@
+@prefix p0: <http://id.nlm.nih.gov/mesh/> .
+@prefix p1: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sml: <http://vocabularies.smartlogic.com/mesh/> .
+
+p0:D001943 sml:termLabel p0:D001943_BreastCarcinoma ;
+           sml:termLabel p0:D001943_BreastCancer ;
+           p1:prefLabel  p0:D001943_prefLabel .
+
+p0:D001943_BreastCarcinoma a p1:Label ;
+                            p1:literalForm "Breast Carcinoma"@en .
+p0:D001943_BreastCancer a p1:Label ;
+                          p1:literalForm "Breast Cancer"@en .
+
+p0:D001943_prefLabel      p1:literalForm "Breast Neoplasms"@en .

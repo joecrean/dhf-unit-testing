@@ -1,0 +1,12 @@
+{
+
+  "triple-index": true,
+  "collection-lexicon": true,
+  "stemmed-searches": "off",
+  "word-searches": false,
+  "fast-case-sensitive-searches": false,
+  "fast-diacritic-sensitive-searches": false,
+  "fast-element-word-searches": false,
+  "fast-element-phrase-searches": false
+
+}
